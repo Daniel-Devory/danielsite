@@ -1,0 +1,54 @@
+.still-pane {
+    flex: 3;
+    background-image: url("../Images/background_image.jpeg");
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.shade-layer {
+    flex: 1;
+    display: flex;
+    background-color: rgba(0, 11, 24, .9);
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+}
+
+.still-content {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    font-size: x-large;
+}
+
+.nav-bar{
+    flex: 1;
+}
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.icon-links{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 36px
+}
+
+.click-icon{
+    object-fit: contain;
+    opacity: 60%;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+

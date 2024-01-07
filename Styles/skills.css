@@ -1,0 +1,51 @@
+.skills-progress {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.individual-skill {
+    display: flex;
+    height: 36px;
+    margin-bottom: 15px;
+}
+
+.icon {
+    object-fit: contain;
+    aspect-ratio: 1;
+}
+
+.full-bar {
+    height: 24px;
+    width: 100%;
+    background-color: lightgray;
+    vertical-align: middle;
+    margin-top: 5px;
+    margin-left: 10px;
+    border-radius: 10px;
+}
+
+.bar {
+    text-align: right;
+    padding-top: 4px;
+    padding-right: 10px;
+    height: 20px;
+    width: 100%;
+    border-radius: 10px;
+    font-weight: 600;
+
+}
+
+.altium {width: 70%; background-color: #2196F3;} 
+.oscilloscope {width: 80%; background-color: #2196F3;}
+.arduino {width: 90%; background-color: #2196F3;} 
+.soldering {width: 80%; background-color: #2196F3;} 
+.cplus {width: 70%; background-color: #2196F3;} 
+.java {width: 80%; background-color: #2196F3;} 
+.css {width: 35%; background-color: #2196F3;}
+.python {width: 55%; background-color: #2196F3;} 
+.html {width: 35%; background-color: #2196F3;} 
+.fpga {width: 80%; background-color: #2196F3;}
+.solidworks {width: 25%; background-color: #2196F3;} 
+.git {width: 30%; background-color: #2196F3;} 
+.github {width: 30%; background-color: #2196F3;} 
+.verilog {width: 30%; background-color: #2196F3;} 

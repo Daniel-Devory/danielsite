@@ -1,0 +1,19 @@
+.contact-header {
+    padding-bottom: 20px;
+}
+
+
+.contact-box {
+    width: 50%;
+    min-width: 300px;
+}
+
+#fs-frm-inputs {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-section {
+    display: flex; 
+    justify-content: center;
+}

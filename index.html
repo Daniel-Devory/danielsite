@@ -10,7 +10,8 @@
     <link rel="stylesheet" href="Styles/nav.css">
     <link rel="stylesheet" href="Styles/about.css">
     <link rel="stylesheet" href="Styles/skills.css">
-
+    <link rel="stylesheet" href="Styles/contact.css">
+    <script src="JavaS/script.js"></script>
 </head>
 
 <body>
@@ -62,10 +63,10 @@
 
                 <div class="project-preview">
                     <div class="project-photo-row">
-                        <img class="project-photo" src="Images/test5.jpeg">
+                        <a href="wavewise.html#intro_anchor" target="_self"><img class="project-photo" src="Images/test5.jpeg"></a>
                     </div>
                     <p class="project-name">
-                        HiddenLock
+                        WaveWise
                     </p>
                     <p class="project-summary">
                         So like this one was really blah blah. I think it
@@ -79,10 +80,10 @@
 
                 <div class="project-preview">
                     <div class="project-photo-row">
-                        <img class="project-photo" src="Images/battery.jpeg">
+                        <a href="chompion.html#intro_anchor" target="_self"><img class="project-photo" src="Images/test5.jpeg"></a>
                     </div>
                     <p class="project-name">
-                        Imagine Analog
+                        Chompion
                     </p>
                     <p class="project-summary">
                         So like this one was really blah blah. I think it
@@ -93,9 +94,10 @@
                     </p>
                 </div>
 
+
                 <div class="project-preview">
                     <div class="project-photo-row">
-                        <img class="project-photo" src="Images/test4.jpeg">
+                        <a href="electrickart.html#intro_anchor" target="_self"><img class="project-photo" src="Images/test5.jpeg"></a>
                     </div>
                     <p class="project-name">
                         Electric Go-Kart Battery
@@ -111,10 +113,10 @@
 
                 <div class="project-preview">
                     <div class="project-photo-row">
-                        <img class="project-photo" src="Images/test2.jpeg">
+                        <a href="website.html#intro_anchor" target="_self"><img class="project-photo" src="Images/test5.jpeg"></a>
                     </div>
                     <p class="project-name">
-                        ECG System
+                        This Website
                     </p>
                     <p class="project-summary">
                         So like this one was really blah blah. I think it
@@ -127,10 +129,10 @@
 
                 <div class="project-preview">
                     <div class="project-photo-row">
-                        <img class="project-photo" src="Images/test3.jpeg">
+                        <a href="hiddenlock.html#intro_anchor" target="_self"><img class="project-photo" src="Images/test5.jpeg"></a>
                     </div>
                     <p class="project-name">
-                        Bike Safety System
+                        HiddenLock
                     </p>
                     <p class="project-summary">
                         So like this one was really blah blah. I think it
@@ -143,10 +145,10 @@
 
                 <div class="project-preview">
                     <div class="project-photo-row">
-                        <img class="project-photo" src="Images/test1.jpeg">
+                        <a href="imagineanalog.html#intro_anchor" target="_self"><img class="project-photo" src="Images/test5.jpeg"></a>
                     </div>
                     <p class="project-name">
-                        hi
+                        Imagine Analog
                     </p>
                     <p class="project-summary">
                         So like this one was really blah blah. I think it
@@ -157,37 +159,6 @@
                     </p>
                 </div>
 
-                <div class="project-preview">
-                    <div class="project-photo-row">
-                        <img class="project-photo" src="Images/test5.jpeg">
-                    </div>
-                    <p class="project-name">
-                        hi
-                    </p>
-                    <p class="project-summary">
-                        So like this one was really blah blah. I think it
-                        was so so great. So .
-                    </p>
-                    <p class="project-dates">
-                        January 2021 - December 2022
-                    </p>
-                </div>
-
-                <div class="project-preview">
-                    <div class="project-photo-row">
-                        <img class="project-photo" src="Images/battery.jpeg">
-                    </div>
-                    <p class="project-name">
-                        hi
-                    </p>
-                    <p class="project-summary">
-                        So like this one was really blah blah. I think it
-                        was so so great. So .
-                    </p>
-                    <p class="project-dates">
-                        January 2021 - December 2022
-                    </p>
-                </div>
 
             </div>
 
@@ -195,49 +166,30 @@
 
             <div class="contact-header">
                 <h1 id="contact_anchor">Contact Me</h1>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
+
+                <div class="contact-section">
+                    <div class="contact-box">
+                        <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/xyyryrza" method="POST">
+                            <fieldset id="fs-frm-inputs">
+                              <label for="full-name">Full Name</label>
+                              <input type="text" name="name" id="full-name" placeholder="First and Last" required="">
+                              <label for="email-address">Email Address</label>
+                              <input type="email" name="_replyto" id="email-address" placeholder="email@domain.tld" required="">
+                              <label for="message">Message</label>
+                              <textarea rows="5" name="message" id="message" placeholder="Aenean lacinia bibendum nulla sed consectetur. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Donec ullamcorper nulla non metus auctor fringilla nullam quis risus." required=""></textarea>
+                              <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
+                            </fieldset>
+                            <input type="submit" value="Submit">
+                          </form>
+                    </div>
+                </div>
+
 
 
             </div>
         </div>
     </div>
 
-    <!-- <script src="JavaS/script.js"></script> -->
 </body>
 
 </html>

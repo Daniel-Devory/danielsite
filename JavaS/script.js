@@ -1,9 +1,10 @@
-window.addEventListener('wheel', function(e) {
-    var scrollableElements = document.querySelectorAll('.still-pane');
-  
-    for (var i = 0; i < scrollableElements.length; i++) {
-      var scrollableElement = scrollableElements[i];
-      scrollableElement.scrollTop += e.deltaY;
-    }
-  });
-  
+
+const hamburger = document.querySelector(".hamburger");
+const navMenu = document.querySelector(".click-section");
+
+hamburger.addEventListener("click", mobileMenu);
+
+function mobileMenu() {
+  hamburger.classList.toggle("active");
+  navMenu.classList.toggle("active");
+};

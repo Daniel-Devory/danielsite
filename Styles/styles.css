@@ -1,32 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body,
 html {
-    height: 100%;
-    width: 100%;
     margin: 0;
+    padding: 0;
     font-family: montserrat;
     font-style: normal;
-    font-weight: 100;
 }
+
+
 
 hr {
     width: 95%;
 }
 
-.main-box {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    width: 100%;
-}
-
 
 .scroll-pane {
-    flex: 1;
     text-align: center;
-    overflow: scroll;
-    background-color: white;
     color: black;
-
+    padding-top: 3rem;
 }
 
 .project-header,
@@ -38,8 +34,6 @@ hr {
     margin-left: 40px;
     color: black;
 }
-
-
 
 .project-grid {
     display: grid;

@@ -1,10 +1,7 @@
 
-const hamburger = document.querySelector(".hamburger");
-const navMenu = document.querySelector(".click-section");
+const toggleButton = document.getElementsByClassName('toggle-button')[0]
+const navbarLinks = document.getElementsByClassName('navbar-links')[0]
 
-hamburger.addEventListener("click", mobileMenu);
-
-function mobileMenu() {
-  hamburger.classList.toggle("active");
-  navMenu.classList.toggle("active");
-};
+toggleButton.addEventListener('click', () => {
+  navbarLinks.classList.toggle('active')
+})

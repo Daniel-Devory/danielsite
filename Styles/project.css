@@ -1,26 +1,27 @@
 .highlights-section {
-    background-color: rgba(0, 11, 24, 0.902);
-    display: grid;
-    grid-template-columns: .5fr 1fr;
-    color: white;
-    align-items: center;
-    justify-content: center;
     height: 100%;
+    color: white;
+    display: grid;
+    grid-template-columns: .7fr 1.5fr;
+    column-gap: 10%;
     row-gap: 20px;
-    column-gap: 60px;
-    padding: 0px 80px 0px 80px;
+    padding: 20px 80px 20px 80px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 12%;
+    padding-right: 12%;
+    background-color: rgba(0, 11, 24, 0.902); 
+    align-items: center;
+    width: 100%;
 }
 
-
-.project-main-photo-holder {
-}
 
 .project-main-photo {
     object-fit: cover;
-    width: 90%;
+    width: 100%;
     aspect-ratio: 3/2;
     border-radius: 2%;
-    max-width: 700px;
+    max-width: 1200px;
 }
 
 .project-words-holder {
@@ -30,37 +31,55 @@
 }
 
 .project-words {
-    max-width: 300px;
+    max-width: none;
     text-align: left;
     align-items: center;
+    font-size: 1.5rem;
 }
 
 .project-side-side {
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: .7fr 1.5fr;
+    column-gap: 10%;
+    row-gap: 20px;
+    padding: 20px 80px 20px 80px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 12%;
+    padding-right: 12%;
+    align-items: top;
+    width: 100%;
 }
 
 .project-left-side {
-    flex: 1;
     text-align: left;
-    background-color: aliceblue;
+    font-size: 1.2rem;
+
 }
 
 .project-right-side {
-    flex: 1;
     text-align: left;
-    background-color: beige;
+    font-size: 1.2rem;
 }
 
-@media screen and (max-width: 1000px) {
+@media (max-width: 1000px) {
     .highlights-section {
         grid-template-columns: repeat(1, 1fr);
-        padding: 0px 20px 0px 20px;
+        padding: 40px 40px 60px 40px;
         row-gap: 0px;
         column-gap: 0px;
     }
-    .project-side-side {
-        display: flex;
-        flex-direction: column;
+
+    .project-words {
+        max-width: 80%;
     }
+
+    .project-side-side {
+        grid-template-columns: repeat(1, 1fr);
+        padding: 40px 40px 60px 40px;
+        row-gap: 20px;
+        column-gap: 0px;
+    }
+
+
 }

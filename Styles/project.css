@@ -59,8 +59,13 @@
 }
 
 .project-right-side {
+    line-height: 150%;
     text-align: left;
     font-size: 1.2rem;
+}
+
+.project-right-side ul {
+    padding-left: 10%;
 }
 
 .iframe-container {
@@ -91,6 +96,14 @@
     border: none;
 }
 
+.project-photo-row {
+    object-fit: cover;
+    width: 80%;
+    border-radius: 1%;
+    max-width: 1000px;
+}
+
+
 @media (max-width: 1000px) {
     .highlights-section {
         grid-template-columns: repeat(1, 1fr);
@@ -112,6 +125,10 @@
         padding: 40px 40px 60px 40px;
         row-gap: 20px;
         column-gap: 0px;
+    }
+
+    .project-photo-row {
+        width: 90%;
     }
 
 

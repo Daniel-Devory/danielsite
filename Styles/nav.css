@@ -43,6 +43,11 @@
     display: block;
 }
 
+.navbar-links li a:hover {
+    color: white;
+    
+}
+
 .navbar-links li:hover {
     background-color: rgba(0, 11, 24, 0.702);
 }

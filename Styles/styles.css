@@ -16,6 +16,7 @@ html {
 
 hr {
     width: 95%;
+    margin: auto;
 }
 
 
@@ -33,13 +34,16 @@ hr {
     text-align: left;
     margin-left: 40px;
     color: black;
+    margin-top: 20px;
 }
+
+
 
 .project-grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    column-gap: 40px;
-    row-gap: 20px;
+    column-gap: 60px;
+    row-gap: 30px;
     margin: 20px 40px 20px 40px;
 }
 

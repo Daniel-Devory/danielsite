@@ -70,7 +70,7 @@
                     Northeastern's product development club, to create a prototype capable of 
                     dynamic depth adjustment for optimal kelp growth. Our team of 11 talented 
                     individuals delved into researching, ideating, designing, and testing a system 
-                    that incorporated a winch system with stepper-motor-powered depth control.
+                    that incorporated a winch system with stepper motor powered depth control.
                     <br> <br>
                     As an Electrical & Computer Engineer on the team, my primary focus was on 
                     power systems, software architecture, and the design and bringup of the Buoy 
@@ -136,6 +136,95 @@
             <img class="project-photo-row" src="Images/powerslide.png">
         </div>
 
+
+        <div class = project-side-side>
+            <div class="project-left-side">
+                <h2>Final Power Architecture</h2>
+                <h3>Hard Numbers:
+                    Calculations in and Multiple Revisions Later
+                </h3>
+            </div>
+            <div class="project-right-side">
+                <p> 
+                    After receiving updated power value calculations from the mechanical team, significant 
+                    changes were made to the power design. With motor power requirements adjusted to 180W, 
+                    a 288W motor was selected for its holding torque of 8.5nM, providing a Factor of Safety 
+                    (FOS) of approximately 1.5x at 48V. The stepper motor was chosen for its 'locking' 
+                    capabilities and measurable movement based on steps. At 48V, the stepper motor would 
+                    draw a max continuous 6A, much more reasonable than the current we were looking at 
+                    originally. We also chose a Pololu motor controller that offered feedback data, 
+                    including a stall line, and the flexibility to adjust micro-stepping for future torque, 
+                    energy, and vibration optimization.
+                    <br><br>
+                    I chose a 48V, 10AH LiFePO4 battery pack with a built-in 20A BMS that would provide ample 
+                    power for peak draw requirements, supporting over an hour and a half of continuous use. 
+                    Realistically, the motor would not be running at full power continuously, and rather only 
+                    have this hour and a half of use over 2-3 days at the worst. Complementing the battery, 
+                    four 12V solar panels in series, each rated for a maximum of approximately 4 Amps, were 
+                    introduced to recharge the battery ensuring that it never discharge. This solar setup could 
+                    almost fully sustain full motor power and charge the battery from 0-80% in two hours. To 
+                    streamline the charging process and address time constraints, a dedicated charge controller 
+                    was acquired instead of designing a custom switching circuit. The controller chosen ensures 
+                    the battery is charged at the required 55V, accommodating the solar panels' peak supply of 
+                    74.4V under optimal conditions. At this point, the high voltage power architecture was 
+                    complete, and the purchases had been made. 
+                </p>
+            </div>
+
+        </div>
+
+        <div class="project-photo-holder">
+            <img class="project-photo-row" src="Images/powerpic.jpeg">
+        </div>
+
+        <div class = project-side-side>
+            <div class="project-left-side">
+                <h2>Software Architecture</h2>
+                <h3>The Flowchart:
+                    States, Sensors, & Actions
+                </h3>
+            </div>
+            <div class="project-right-side">
+                <p> 
+                    In the realm of software architecture for the WaveWise project, the focus was on 
+                    efficient and responsive handling of sensor data and movement control. I mean just 
+                    take a look at that awesome flowchart I made below! The software design was divided 
+                    into three main segments: Overall, Sensor Readings, and Movement.
+
+                    <br><br>
+                    Overall:<br>
+                    This incorporates cycles of sleep mode to conserve battery, lasting 10 minutes each, 
+                    and periodic checks of the sensors to assess the necessity of movement before 
+                    transitioning back to a low-power state.
+
+                    <br><br>
+                    Sensor Readings:<br>
+                    In this phase, the system enters a full-power mode where all sensors—measuring pH, 
+                    salinity, temperature, UV light, depth/pressure, and nitrate—are activated and polled. 
+                    The information gathered from the sensors is read through either the I2C or SPI lines. 
+                    The sensor reading process also involves the storage of data in JSON format on an SD 
+                    card for further data analysis as per the clients request. This phase was a crucial 
+                    bridge between data collection and subsequent decision-making.
+
+                    <br><br>
+                    Well, the client requested nitrate data, but its sensor would have single-handedly 
+                    eaten up our entire budget.
+
+                    <br><br>
+                    Movement:<br>
+                    When deemed necessary based on sensor readings, the system transitions into the 
+                    movement mode. This phase orchestrates the required movements until sensor readings 
+                    reach satisfactory levels. An important condition for movement is the 
+                    verification of a sufficiently high battery voltage ~(>15%) charge to guarantee 
+                    uninterrupted system functionality. 
+                </p>
+            </div>
+
+        </div>
+
+        <div class="project-photo-holder">
+            <img class="project-photo-row" src="Images/smfc.png">
+        </div>
 
 
     </div>

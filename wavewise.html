@@ -226,6 +226,42 @@
             <img class="project-photo-row" src="Images/smfc.png">
         </div>
 
+        <div class = project-side-side>
+            <div class="project-left-side">
+                <h2>Key Decisions</h2>
+                <h3>Ups, Downs, & Inbetweens
+                </h3>
+            </div>
+            <div class="project-right-side">
+                <p> 
+                    A major decision we made was to go custom and design PCBs, ditching the tried and true 
+                    Arduino and Raspberry Pi. This was partly for the challenge, but more importantly, 
+                    it let us tailor the boards to snugly fit into our mechanical setup. Plus, we foresaw 
+                    weird connectors for certain sensors, so custom PCBs with the right connectors it 
+                    was – no messy soldering directly onto Arduino’s with a birds nest of wires (almost).
+                    <br><br>
+                    When it came to programming the boards, we ended up using the Arduino IDE. We were 
+                    able to do this by choosing the ATMega328PB as our MCU and using a FTDI chip for 
+                    programming. You'll hear about the mess of a time we had boot loading these MCUs 
+                    later on. The Arduino IDE came in handy with its quick uploads and plethora of built 
+                    in and add on libraries.
+                    <br><br>
+                    One of the biggest decisions we made was creating two PCBs. One in the floating 
+                    buoy, taking care of logic control, and the other down in the submersible, playing 
+                    host to all the sensors. They would communicate over UART, with the submersible 
+                    sending data up to the buoy for analysis and saving on an SD card. We decided to 
+                    run both ATMegas at 5V instead of 3.3V. The main reasons for this was that all 
+                    sensors could run at 5V whereas only a few would run and output data at 3.3V. 
+                    The 5V over UART would also be more stable according to our research.
+                </p>
+            </div>
+
+        </div>
+
+        <div class="project-photo-holder">
+            <img class="project-photo-row" src="Images/infrastructure.png">
+        </div>
+
 
     </div>
 </body>
